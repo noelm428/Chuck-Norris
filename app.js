@@ -26,7 +26,7 @@
 
     $('.Norris-images').children().eq(currentImgIndex).css('display', 'block')
     $.ajax({
-      url: `http:api.icndb.com/jokes/random?exclude=[nerdy,explicit]?escape=javascript"s"`
+      url: `http:api.icndb.com/jokes/random?exclude=[nerdy,explicit]?escape=javascripts`
     }).then(
       (data) => {
         console.log(data);
@@ -68,7 +68,7 @@ $('.previous').on('click', () => {
 
   $('.Norris-images').children().eq(currentImgIndex).css('display', 'block')
   $.ajax({
-    url: `http:api.icndb.com/jokes/random?exclude=[nerdy,explicit]?escape=javascripts`
+    url: `https:api.icndb.com/jokes/random?exclude=[nerdy,explicit]?escape=javascript`
   }).then(
     (data) => {
       console.log(data);
