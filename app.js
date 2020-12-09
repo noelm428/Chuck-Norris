@@ -26,7 +26,7 @@
 
     $('.Norris-images').children().eq(currentImgIndex).css('display', 'block')
     $.ajax({
-      url: `https:api.icndb.com/jokes/random?exclude=[nerdy,explicit]?escape=javascript`
+      url: `http:api.icndb.com/jokes/random?exclude=[nerdy,explicit]?escape=javascript`
     }).then(
       (data) => {
         console.log(data);
