@@ -1,1 +1,82 @@
+body {
+  background-color: #2cff13;
+  img
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Norris-carousel {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.Norris-images {
+  width: 50%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px #F49EFF;
+  border: 15px solid #f7ff3c;
+  border-radius: .3em
+}
+
+.Norris-images img {
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+
+.button {
+  /* flex-wrap: wrap; */
+}
+
+.next, .previous {
+  /* display: row; */
+  height: 45px;
+  background-color: #e034ab;
+  border-radius: .5em;
+  color: ghostwhite;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: space-around;
+}
+
+button:hover {
+  background-color: #f95e2d;
+}
+
+#joke {
+  font-size: 3em;
+  font-family: 'Caveat', cursive;
+  color: #AE00F2;
+  text-shadow: 2px 2px #F49EFF;
+}
+
+.Norris-images img:first-of-type {
+  display: block;
+}
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 500px;
+  /* z-index: 1; */
+  overflow: auto;
+}
+
+#modal-textbox {
+  background-color: red;
+  position: relative;
+  opacity: .5;
+  height: 350px;
+  width: 550px;
+  border-radius: .3em;
+  margin: 0px 0px 0px 0px;
+}
