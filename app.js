@@ -4,17 +4,17 @@
   let numOfImages = $('.Norris-images').children().length - 1;
 
 
-  //   $(".next").on("click",() => {
-  //    $('.Norris-images').children().eq(currentImgIndex).css('display','none')
-  //    if (currentImgIndex<numOfImages){
-  //       currentImgIndex++;
-  //    }
-  // else{
-  //   currentImgIndex=0
-  // }
-  //    $('.Norris-images').children().eq(currentImgIndex).css('display','block')
-  //
-  //   })
+    $(".next").on("click",() => {
+     $('.Norris-images').children().eq(currentImgIndex).css('display','none')
+     if (currentImgIndex<numOfImages){
+        currentImgIndex++;
+     }
+  else{
+    currentImgIndex=0
+  }
+     $('.Norris-images').children().eq(currentImgIndex).css('display','block')
+
+    })
 
   $('.previous').on('click', () => {
     $('.Norris-images').children().eq(currentImgIndex).css('display', 'none')
@@ -28,13 +28,14 @@
     $.ajax({
       url: `https://api.icndb.com/jokes/random?exclude=[nerdy,explicit]?escape=javascript`,
       type: 'GET'
+
     }).then(
       (data) => {
         console.log(data);
         $('#joke').html(data.value.joke)
       },
       (error) => {
-        alert('YOUR LINKS BROKEN. *JUDO CHOP*')
+        // alert('YOUR LINKS BROKEN. *JUDO CHOP*')
 
 
 
